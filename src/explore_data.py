@@ -18,3 +18,12 @@ print(df["Class"].value_counts())
 
 print("\nFraud percentage:")
 print(df["Class"].mean() * 100)
+
+print("\nMissing values in each column:")
+print(df.isnull().sum().sum())
+
+print("\nNumber of duplicate rows:")
+print(df.duplicated().sum())
+
+print("\nTransaction amount statistics:")
+print(df["Amount"].describe())
